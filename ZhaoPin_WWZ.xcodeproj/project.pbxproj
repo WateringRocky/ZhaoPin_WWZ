@@ -606,6 +606,7 @@
 		0F7F83BE16D31326008FE099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0FBBE53C16D36D0500A8B339 /* BaseData */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -812,6 +813,13 @@
 				0FBBE53616D3680000A8B339 /* BaseData.m */,
 			);
 			name = Singleton;
+			sourceTree = "<group>";
+		};
+		0FBBE53C16D36D0500A8B339 /* BaseData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BaseData;
 			sourceTree = "<group>";
 		};
 		0FF6845216D311C000F8DCEF = {

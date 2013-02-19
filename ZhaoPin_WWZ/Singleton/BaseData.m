@@ -8,6 +8,8 @@
 
 #import "BaseData.h"
 
+static BaseData *dataInstance = nil;
+
 @implementation BaseData
 
 @end

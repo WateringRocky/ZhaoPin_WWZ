@@ -10,7 +10,6 @@
 
 @interface BaseData : NSObject
 {
-    int a;
-    int b;
+    
 }
 @end

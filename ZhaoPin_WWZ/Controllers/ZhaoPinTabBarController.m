@@ -31,11 +31,11 @@
         RealTimeRecommendNaviController *aRealTimeRecommendNaviController = [[RealTimeRecommendNaviController alloc] init];
         MyZhiLianNaviController *aMyZhiLianNaviController = [[MyZhiLianNaviController alloc] init];
         
-        [controllerArray addObject:aJobGuideNaviController];
         [controllerArray addObject:aJobSearchNaviController];
-        [controllerArray addObject:aSalaryQueryNaviController];
-        [controllerArray addObject:aRealTimeRecommendNaviController];
         [controllerArray addObject:aMyZhiLianNaviController];
+        [controllerArray addObject:aRealTimeRecommendNaviController];
+        [controllerArray addObject:aSalaryQueryNaviController];
+        [controllerArray addObject:aJobGuideNaviController];
         
         [aJobSearchNaviController release];
         [aJobGuideNaviController release];

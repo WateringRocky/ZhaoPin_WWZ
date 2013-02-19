@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FF6846216D311C000F8DCEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846116D311C000F8DCEF /* UIKit.framework */; };
+		0FF6846416D311C000F8DCEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846316D311C000F8DCEF /* Foundation.framework */; };
+		0FF6846616D311C000F8DCEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846516D311C000F8DCEF /* CoreGraphics.framework */; };
+		0FF6846C16D311C000F8DCEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6846A16D311C000F8DCEF /* InfoPlist.strings */; };
+		0FF6846E16D311C000F8DCEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6846D16D311C000F8DCEF /* main.m */; };
+		0FF6847216D311C000F8DCEF /* ZPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6847116D311C000F8DCEF /* ZPAppDelegate.m */; };
+		0FF6847416D311C000F8DCEF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6847316D311C000F8DCEF /* Default.png */; };
+		0FF6847616D311C000F8DCEF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6847516D311C000F8DCEF /* Default@2x.png */; };
+		0FF6847816D311C000F8DCEF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6847716D311C000F8DCEF /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FF6845D16D311C000F8DCEF /* ZhaoPin_WWZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaoPin_WWZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF6846116D311C000F8DCEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0FF6846316D311C000F8DCEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0FF6846516D311C000F8DCEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0FF6846916D311C000F8DCEF /* ZhaoPin_WWZ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZhaoPin_WWZ-Info.plist"; sourceTree = "<group>"; };
+		0FF6846B16D311C000F8DCEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FF6846D16D311C000F8DCEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FF6846F16D311C000F8DCEF /* ZhaoPin_WWZ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhaoPin_WWZ-Prefix.pch"; sourceTree = "<group>"; };
+		0FF6847016D311C000F8DCEF /* ZPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPAppDelegate.h; sourceTree = "<group>"; };
+		0FF6847116D311C000F8DCEF /* ZPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZPAppDelegate.m; sourceTree = "<group>"; };
+		0FF6847316D311C000F8DCEF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0FF6847516D311C000F8DCEF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0FF6847716D311C000F8DCEF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FF6845A16D311C000F8DCEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF6846216D311C000F8DCEF /* UIKit.framework in Frameworks */,
+				0FF6846416D311C000F8DCEF /* Foundation.framework in Frameworks */,
+				0FF6846616D311C000F8DCEF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FF6845216D311C000F8DCEF = {
+			isa = PBXGroup;
+			children = (
+				0FF6846716D311C000F8DCEF /* ZhaoPin_WWZ */,
+				0FF6846016D311C000F8DCEF /* Frameworks */,
+				0FF6845E16D311C000F8DCEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FF6845E16D311C000F8DCEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6845D16D311C000F8DCEF /* ZhaoPin_WWZ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FF6846016D311C000F8DCEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6846116D311C000F8DCEF /* UIKit.framework */,
+				0FF6846316D311C000F8DCEF /* Foundation.framework */,
+				0FF6846516D311C000F8DCEF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FF6846716D311C000F8DCEF /* ZhaoPin_WWZ */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6847016D311C000F8DCEF /* ZPAppDelegate.h */,
+				0FF6847116D311C000F8DCEF /* ZPAppDelegate.m */,
+				0FF6846816D311C000F8DCEF /* Supporting Files */,
+			);
+			path = ZhaoPin_WWZ;
+			sourceTree = "<group>";
+		};
+		0FF6846816D311C000F8DCEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6846916D311C000F8DCEF /* ZhaoPin_WWZ-Info.plist */,
+				0FF6846A16D311C000F8DCEF /* InfoPlist.strings */,
+				0FF6846D16D311C000F8DCEF /* main.m */,
+				0FF6846F16D311C000F8DCEF /* ZhaoPin_WWZ-Prefix.pch */,
+				0FF6847316D311C000F8DCEF /* Default.png */,
+				0FF6847516D311C000F8DCEF /* Default@2x.png */,
+				0FF6847716D311C000F8DCEF /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FF6845C16D311C000F8DCEF /* ZhaoPin_WWZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF6847B16D311C000F8DCEF /* Build configuration list for PBXNativeTarget "ZhaoPin_WWZ" */;
+			buildPhases = (
+				0FF6845916D311C000F8DCEF /* Sources */,
+				0FF6845A16D311C000F8DCEF /* Frameworks */,
+				0FF6845B16D311C000F8DCEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZhaoPin_WWZ;
+			productName = ZhaoPin_WWZ;
+			productReference = 0FF6845D16D311C000F8DCEF /* ZhaoPin_WWZ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FF6845416D311C000F8DCEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Ibokan;
+			};
+			buildConfigurationList = 0FF6845716D311C000F8DCEF /* Build configuration list for PBXProject "ZhaoPin_WWZ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0FF6845216D311C000F8DCEF;
+			productRefGroup = 0FF6845E16D311C000F8DCEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FF6845C16D311C000F8DCEF /* ZhaoPin_WWZ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FF6845B16D311C000F8DCEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF6846C16D311C000F8DCEF /* InfoPlist.strings in Resources */,
+				0FF6847416D311C000F8DCEF /* Default.png in Resources */,
+				0FF6847616D311C000F8DCEF /* Default@2x.png in Resources */,
+				0FF6847816D311C000F8DCEF /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FF6845916D311C000F8DCEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF6846E16D311C000F8DCEF /* main.m in Sources */,
+				0FF6847216D311C000F8DCEF /* ZPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0FF6846A16D311C000F8DCEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FF6846B16D311C000F8DCEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FF6847916D311C000F8DCEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FF6847A16D311C000F8DCEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FF6847C16D311C000F8DCEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZhaoPin_WWZ/ZhaoPin_WWZ-Prefix.pch";
+				INFOPLIST_FILE = "ZhaoPin_WWZ/ZhaoPin_WWZ-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0FF6847D16D311C000F8DCEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZhaoPin_WWZ/ZhaoPin_WWZ-Prefix.pch";
+				INFOPLIST_FILE = "ZhaoPin_WWZ/ZhaoPin_WWZ-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FF6845716D311C000F8DCEF /* Build configuration list for PBXProject "ZhaoPin_WWZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF6847916D311C000F8DCEF /* Debug */,
+				0FF6847A16D311C000F8DCEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FF6847B16D311C000F8DCEF /* Build configuration list for PBXNativeTarget "ZhaoPin_WWZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF6847C16D311C000F8DCEF /* Debug */,
+				0FF6847D16D311C000F8DCEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FF6845416D311C000F8DCEF /* Project object */;
+}

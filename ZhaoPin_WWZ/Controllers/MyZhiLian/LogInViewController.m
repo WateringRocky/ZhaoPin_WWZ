@@ -7,6 +7,7 @@
 //
 
 #import "LogInViewController.h"
+#import "RegisterViewController.h"
 
 @interface LogInViewController ()
 
@@ -14,11 +15,12 @@
 
 @implementation LogInViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super init];
+    if (self)
+    {
+        
     }
     return self;
 }
@@ -26,7 +28,46 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor grayColor];
+    //self.view.backgroundColor = [UIColor grayColor];
+    //登陆view
+	UIImageView *loginBgView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 300, 100)];
+    loginBgView.image = [UIImage imageNamed:@"loginBg"];
+    [self.view addSubview:loginBgView];
+    //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"loginBg"]]];
+    //邮箱Field
+    UITextField *mailField = [[UITextField alloc]initWithFrame:CGRectMake(70, 20, 230, 30)];
+    mailField.borderStyle = UITextBorderStyleRoundedRect;
+    mailField.placeholder = @"请输入邮箱地址";
+    mailField.clearsOnBeginEditing = YES;
+    mailField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    [self.view addSubview:mailField];
+
+    //密码Field
+    UITextField *registerField = [[UITextField alloc]initWithFrame:CGRectMake(70, 70, 230, 30)];
+    registerField.borderStyle = UITextBorderStyleRoundedRect;
+    registerField.placeholder = @"请输入密码";
+    registerField.clearsOnBeginEditing = YES;
+    registerField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    [self.view addSubview:registerField];
+    
+    //登陆Button
+    UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    loginButton.frame = CGRectMake(10, 115, 130, 44);
+    [loginButton setBackgroundImage:[UIImage imageNamed:@"loginNormal"]  forState:UIControlStateNormal];
+    [loginButton setBackgroundImage:[UIImage imageNamed:@"loginPress"]  forState:UIControlStateHighlighted];
+    [loginButton setTitle:@"登陆" forState:UIControlStateNormal];
+    [loginButton addTarget:self action:@selector(loginDidSomething) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:loginButton];
+    
+    //注册button
+    UIButton *registerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    registerButton.frame = CGRectMake(180, 115, 130, 44);
+    [registerButton setBackgroundImage:[UIImage imageNamed:@"registerNormal"]  forState:UIControlStateNormal];
+    [registerButton setBackgroundImage:[UIImage imageNamed:@"registerPress"]  forState:UIControlStateHighlighted];
+    [registerButton setTitle:@"注册新用户" forState:UIControlStateNormal];
+    [registerButton addTarget:self action:@selector(registerUerInfo) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:registerButton];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +75,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)loginDidSomething
+{
 
+}
+-(void)registerUerInfo
+{
+    RegisterViewController *registerController = [[RegisterViewController alloc]init];
+    [self.navigationController pushViewController:registerController animated:YES];
+    [registerController release];
+    
+}
 @end

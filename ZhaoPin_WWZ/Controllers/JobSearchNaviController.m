@@ -7,6 +7,7 @@
 //
 
 #import "JobSearchNaviController.h"
+#import "SearchConditionViewController.h"
 
 @interface JobSearchNaviController ()
 
@@ -14,19 +15,19 @@
 
 @implementation JobSearchNaviController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init])
+    {
+        SearchConditionViewController *aSearchConditionViewController = [[SearchConditionViewController alloc]init];
+        [self initWithRootViewController:aSearchConditionViewController];
+        [aSearchConditionViewController release];
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

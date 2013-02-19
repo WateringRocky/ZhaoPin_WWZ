@@ -7,6 +7,11 @@
 //
 
 #import "ZhaoPinTabBarController.h"
+#import "JobGuideNaviController.h"
+#import "JobSearchNaviController.h"
+#import "SalaryQueryNaviController.h"
+#import "RealTimeRecommendNaviController.h"
+#import "MyZhiLianNaviController.h"
 
 @interface ZhaoPinTabBarController ()
 
@@ -14,11 +19,33 @@
 
 @implementation ZhaoPinTabBarController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init])
+    {
+        NSMutableArray *controllerArray = [NSMutableArray array];
+        
+        JobGuideNaviController *aJobGuideNaviController = [[JobGuideNaviController alloc] init];
+        JobSearchNaviController *aJobSearchNaviController = [[JobSearchNaviController alloc] init];
+        SalaryQueryNaviController *aSalaryQueryNaviController = [[SalaryQueryNaviController alloc] init];
+        RealTimeRecommendNaviController *aRealTimeRecommendNaviController = [[RealTimeRecommendNaviController alloc] init];
+        MyZhiLianNaviController *aMyZhiLianNaviController = [[MyZhiLianNaviController alloc] init];
+        
+        [controllerArray addObject:aJobGuideNaviController];
+        [controllerArray addObject:aJobSearchNaviController];
+        [controllerArray addObject:aSalaryQueryNaviController];
+        [controllerArray addObject:aRealTimeRecommendNaviController];
+        [controllerArray addObject:aMyZhiLianNaviController];
+        
+        [aJobSearchNaviController release];
+        [aJobGuideNaviController release];
+        [aSalaryQueryNaviController release];
+        [aRealTimeRecommendNaviController release];
+        [aMyZhiLianNaviController release];
+        
+        self.viewControllers = controllerArray;
+        
+        
     }
     return self;
 }

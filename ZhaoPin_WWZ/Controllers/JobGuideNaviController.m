@@ -7,6 +7,7 @@
 //
 
 #import "JobGuideNaviController.h"
+#import "GuideListViewController.h"
 
 @interface JobGuideNaviController ()
 
@@ -14,11 +15,13 @@
 
 @implementation JobGuideNaviController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init])
+    {
+        GuideListViewController *aGuideListViewController = [[GuideListViewController alloc] init];
+        [self initWithRootViewController:aGuideListViewController];
+        [aGuideListViewController release];
     }
     return self;
 }

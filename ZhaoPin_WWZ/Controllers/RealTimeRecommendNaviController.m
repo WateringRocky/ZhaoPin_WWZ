@@ -7,6 +7,7 @@
 //
 
 #import "RealTimeRecommendNaviController.h"
+#import "JobRecommendViewController.h"
 
 @interface RealTimeRecommendNaviController ()
 
@@ -14,11 +15,13 @@
 
 @implementation RealTimeRecommendNaviController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init])
+    {
+        JobRecommendViewController *aJobRecommendViewController = [[JobRecommendViewController alloc] init];
+        [self initWithRootViewController:aJobRecommendViewController];
+        [aJobRecommendViewController release];
     }
     return self;
 }

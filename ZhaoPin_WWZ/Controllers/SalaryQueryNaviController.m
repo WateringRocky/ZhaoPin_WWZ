@@ -7,6 +7,7 @@
 //
 
 #import "SalaryQueryNaviController.h"
+#import "QueryConditionViewController.h"
 
 @interface SalaryQueryNaviController ()
 
@@ -14,11 +15,13 @@
 
 @implementation SalaryQueryNaviController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init])
+    {
+        QueryConditionViewController *aQueryConditionViewController = [[QueryConditionViewController alloc] init];
+        [self initWithRootViewController:aQueryConditionViewController];
+        [aQueryConditionViewController release];
     }
     return self;
 }
@@ -26,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
 }
 
 - (void)didReceiveMemoryWarning

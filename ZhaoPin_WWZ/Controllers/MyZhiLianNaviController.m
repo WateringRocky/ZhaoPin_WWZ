@@ -7,6 +7,7 @@
 //
 
 #import "MyZhiLianNaviController.h"
+#import "LogInViewController.h"
 
 @interface MyZhiLianNaviController ()
 
@@ -14,11 +15,13 @@
 
 @implementation MyZhiLianNaviController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init])
+    {
+        LogInViewController *aLogInViewController = [[LogInViewController alloc] init];
+        [self initWithRootViewController:aLogInViewController];
+        [aLogInViewController release];
     }
     return self;
 }

@@ -43,6 +43,8 @@
 		0F7F845F16D328CD008FE099 /* GuideListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F845E16D328CD008FE099 /* GuideListViewController.m */; };
 		0F7F846216D32983008FE099 /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F846116D32983008FE099 /* DetailListViewController.m */; };
 		0F7F846516D32995008FE099 /* GuideTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F846416D32995008FE099 /* GuideTextViewController.m */; };
+		0FBBE53216D367B500A8B339 /* basedata.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0FBBE53116D367B500A8B339 /* basedata.xml */; };
+		0FBBE53716D3680000A8B339 /* BaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBBE53616D3680000A8B339 /* BaseData.m */; };
 		0FF6846216D311C000F8DCEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846116D311C000F8DCEF /* UIKit.framework */; };
 		0FF6846416D311C000F8DCEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846316D311C000F8DCEF /* Foundation.framework */; };
 		0FF6846616D311C000F8DCEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846516D311C000F8DCEF /* CoreGraphics.framework */; };
@@ -127,6 +129,9 @@
 		0F7F846116D32983008FE099 /* DetailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailListViewController.m; path = ZhaoPin_WWZ/Controllers/JobGuide/DetailListViewController.m; sourceTree = "<group>"; };
 		0F7F846316D32995008FE099 /* GuideTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideTextViewController.h; path = ZhaoPin_WWZ/Controllers/JobGuide/GuideTextViewController.h; sourceTree = "<group>"; };
 		0F7F846416D32995008FE099 /* GuideTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideTextViewController.m; path = ZhaoPin_WWZ/Controllers/JobGuide/GuideTextViewController.m; sourceTree = "<group>"; };
+		0FBBE53116D367B500A8B339 /* basedata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = basedata.xml; path = ZhaoPin_WWZ/Resource/basedata.xml; sourceTree = "<group>"; };
+		0FBBE53516D3680000A8B339 /* BaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseData.h; path = ZhaoPin_WWZ/Singleton/BaseData.h; sourceTree = "<group>"; };
+		0FBBE53616D3680000A8B339 /* BaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseData.m; path = ZhaoPin_WWZ/Singleton/BaseData.m; sourceTree = "<group>"; };
 		0FF6845D16D311C000F8DCEF /* ZhaoPin_WWZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaoPin_WWZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF6846116D311C000F8DCEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FF6846316D311C000F8DCEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -204,6 +209,7 @@
 		0F7F83C416D3134C008FE099 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0FBBE53116D367B500A8B339 /* basedata.xml */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -350,9 +356,19 @@
 			name = JobGuide;
 			sourceTree = "<group>";
 		};
+		0FBBE53416D367C700A8B339 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				0FBBE53516D3680000A8B339 /* BaseData.h */,
+				0FBBE53616D3680000A8B339 /* BaseData.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		0FF6845216D311C000F8DCEF = {
 			isa = PBXGroup;
 			children = (
+				0FBBE53416D367C700A8B339 /* Singleton */,
 				0F7F83C416D3134C008FE099 /* Resource */,
 				0F7F83C316D31344008FE099 /* Custom */,
 				0F7F83C216D3133E008FE099 /* External */,
@@ -463,6 +479,7 @@
 				0FF6847416D311C000F8DCEF /* Default.png in Resources */,
 				0FF6847616D311C000F8DCEF /* Default@2x.png in Resources */,
 				0FF6847816D311C000F8DCEF /* Default-568h@2x.png in Resources */,
+				0FBBE53216D367B500A8B339 /* basedata.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +528,7 @@
 				0F7F845F16D328CD008FE099 /* GuideListViewController.m in Sources */,
 				0F7F846216D32983008FE099 /* DetailListViewController.m in Sources */,
 				0F7F846516D32995008FE099 /* GuideTextViewController.m in Sources */,
+				0FBBE53716D3680000A8B339 /* BaseData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

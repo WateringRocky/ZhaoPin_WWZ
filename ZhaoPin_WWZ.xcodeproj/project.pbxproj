@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F7F83D216D316C9008FE099 /* ZhaoPinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83D116D316C9008FE099 /* ZhaoPinTabBarController.m */; };
+		0F7F83D516D316E9008FE099 /* JobSearchNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83D416D316E9008FE099 /* JobSearchNaviController.m */; };
+		0F7F83D816D31803008FE099 /* MyZhiLianNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83D716D31803008FE099 /* MyZhiLianNaviController.m */; };
+		0F7F83DB16D3189B008FE099 /* RealTimeRecommendNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83DA16D3189B008FE099 /* RealTimeRecommendNaviController.m */; };
+		0F7F83DE16D31931008FE099 /* SalaryQueryNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83DD16D31931008FE099 /* SalaryQueryNaviController.m */; };
+		0F7F83E116D3195D008FE099 /* JobGuideNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83E016D3195D008FE099 /* JobGuideNaviController.m */; };
+		0F7F83F116D31C8B008FE099 /* SearchConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83F016D31C8B008FE099 /* SearchConditionViewController.m */; };
+		0F7F840916D31F3A008FE099 /* ConditionNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F840816D31F3A008FE099 /* ConditionNameViewController.m */; };
+		0F7F840C16D31F71008FE099 /* DetailNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F840B16D31F71008FE099 /* DetailNameViewController.m */; };
+		0F7F841016D31FEC008FE099 /* CurrentLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F840F16D31FEC008FE099 /* CurrentLocationCell.m */; };
+		0F7F841316D32017008FE099 /* KeyWordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F841216D32017008FE099 /* KeyWordCell.m */; };
+		0F7F841616D3204C008FE099 /* PickViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F841516D3204C008FE099 /* PickViewCell.m */; };
+		0F7F841916D32078008FE099 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F841816D32078008FE099 /* HistoryCell.m */; };
+		0F7F841C16D32090008FE099 /* PushNextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F841B16D32090008FE099 /* PushNextCell.m */; };
+		0F7F841F16D32138008FE099 /* PushToDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F841E16D32138008FE099 /* PushToDetailCell.m */; };
+		0F7F842216D3219C008FE099 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F842116D3219C008FE099 /* SearchResultViewController.m */; };
+		0F7F842516D321EB008FE099 /* JobInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F842416D321EB008FE099 /* JobInfoViewController.m */; };
+		0F7F842816D32218008FE099 /* JobInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F842716D32218008FE099 /* JobInfoCell.m */; };
+		0F7F842C16D32290008FE099 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F842B16D32290008FE099 /* LogInViewController.m */; };
+		0F7F842F16D322E9008FE099 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F842E16D322E9008FE099 /* RegisterViewController.m */; };
+		0F7F843316D32371008FE099 /* LogRegCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F843216D32371008FE099 /* LogRegCell.m */; };
+		0F7F843616D323CB008FE099 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F843516D323CB008FE099 /* UserInfoViewController.m */; };
+		0F7F843916D32587008FE099 /* DetailInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F843816D32587008FE099 /* DetailInfoViewController.m */; };
+		0F7F843C16D325DE008FE099 /* SubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F843B16D325DE008FE099 /* SubscribeViewController.m */; };
+		0F7F843F16D32625008FE099 /* JobFinderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F843E16D32625008FE099 /* JobFinderCell.m */; };
+		0F7F844316D3268E008FE099 /* JobRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F844216D3268E008FE099 /* JobRecommendViewController.m */; };
+		0F7F844716D326D1008FE099 /* RecommendJobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F844616D326D1008FE099 /* RecommendJobCell.m */; };
+		0F7F844B16D32702008FE099 /* QueryConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F844A16D32702008FE099 /* QueryConditionViewController.m */; };
+		0F7F844F16D32744008FE099 /* WorkExpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F844E16D32744008FE099 /* WorkExpCell.m */; };
+		0F7F845216D327BD008FE099 /* QueryResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F845116D327BD008FE099 /* QueryResultViewController.m */; };
+		0F7F845516D327EB008FE099 /* QueryConditionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F845416D327EB008FE099 /* QueryConditionCell.m */; };
+		0F7F845816D32842008FE099 /* DetailConditionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F845716D32842008FE099 /* DetailConditionCell.m */; };
+		0F7F845B16D3286B008FE099 /* ChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F845A16D3286A008FE099 /* ChartCell.m */; };
+		0F7F845F16D328CD008FE099 /* GuideListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F845E16D328CD008FE099 /* GuideListViewController.m */; };
+		0F7F846216D32983008FE099 /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F846116D32983008FE099 /* DetailListViewController.m */; };
+		0F7F846516D32995008FE099 /* GuideTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F846416D32995008FE099 /* GuideTextViewController.m */; };
 		0FF6846216D311C000F8DCEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846116D311C000F8DCEF /* UIKit.framework */; };
 		0FF6846416D311C000F8DCEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846316D311C000F8DCEF /* Foundation.framework */; };
 		0FF6846616D311C000F8DCEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6846516D311C000F8DCEF /* CoreGraphics.framework */; };
@@ -19,6 +55,78 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F7F83D016D316C9008FE099 /* ZhaoPinTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZhaoPinTabBarController.h; path = ZhaoPin_WWZ/Controllers/ZhaoPinTabBarController.h; sourceTree = "<group>"; };
+		0F7F83D116D316C9008FE099 /* ZhaoPinTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZhaoPinTabBarController.m; path = ZhaoPin_WWZ/Controllers/ZhaoPinTabBarController.m; sourceTree = "<group>"; };
+		0F7F83D316D316E9008FE099 /* JobSearchNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobSearchNaviController.h; path = ZhaoPin_WWZ/Controllers/JobSearchNaviController.h; sourceTree = "<group>"; };
+		0F7F83D416D316E9008FE099 /* JobSearchNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobSearchNaviController.m; path = ZhaoPin_WWZ/Controllers/JobSearchNaviController.m; sourceTree = "<group>"; };
+		0F7F83D616D31803008FE099 /* MyZhiLianNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyZhiLianNaviController.h; path = ZhaoPin_WWZ/Controllers/MyZhiLianNaviController.h; sourceTree = "<group>"; };
+		0F7F83D716D31803008FE099 /* MyZhiLianNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyZhiLianNaviController.m; path = ZhaoPin_WWZ/Controllers/MyZhiLianNaviController.m; sourceTree = "<group>"; };
+		0F7F83D916D3189B008FE099 /* RealTimeRecommendNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealTimeRecommendNaviController.h; path = ZhaoPin_WWZ/Controllers/RealTimeRecommendNaviController.h; sourceTree = "<group>"; };
+		0F7F83DA16D3189B008FE099 /* RealTimeRecommendNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealTimeRecommendNaviController.m; path = ZhaoPin_WWZ/Controllers/RealTimeRecommendNaviController.m; sourceTree = "<group>"; };
+		0F7F83DC16D31931008FE099 /* SalaryQueryNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalaryQueryNaviController.h; path = ZhaoPin_WWZ/Controllers/SalaryQueryNaviController.h; sourceTree = "<group>"; };
+		0F7F83DD16D31931008FE099 /* SalaryQueryNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalaryQueryNaviController.m; path = ZhaoPin_WWZ/Controllers/SalaryQueryNaviController.m; sourceTree = "<group>"; };
+		0F7F83DF16D3195D008FE099 /* JobGuideNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobGuideNaviController.h; path = ZhaoPin_WWZ/Controllers/JobGuideNaviController.h; sourceTree = "<group>"; };
+		0F7F83E016D3195D008FE099 /* JobGuideNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobGuideNaviController.m; path = ZhaoPin_WWZ/Controllers/JobGuideNaviController.m; sourceTree = "<group>"; };
+		0F7F83EF16D31C8B008FE099 /* SearchConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchConditionViewController.h; path = ZhaoPin_WWZ/Controllers/JobSearch/SearchConditionViewController.h; sourceTree = "<group>"; };
+		0F7F83F016D31C8B008FE099 /* SearchConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchConditionViewController.m; path = ZhaoPin_WWZ/Controllers/JobSearch/SearchConditionViewController.m; sourceTree = "<group>"; };
+		0F7F840716D31F3A008FE099 /* ConditionNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConditionNameViewController.h; path = ZhaoPin_WWZ/Controllers/JobSearch/ConditionNameViewController.h; sourceTree = "<group>"; };
+		0F7F840816D31F3A008FE099 /* ConditionNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConditionNameViewController.m; path = ZhaoPin_WWZ/Controllers/JobSearch/ConditionNameViewController.m; sourceTree = "<group>"; };
+		0F7F840A16D31F71008FE099 /* DetailNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailNameViewController.h; path = ZhaoPin_WWZ/Controllers/JobSearch/DetailNameViewController.h; sourceTree = "<group>"; };
+		0F7F840B16D31F71008FE099 /* DetailNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailNameViewController.m; path = ZhaoPin_WWZ/Controllers/JobSearch/DetailNameViewController.m; sourceTree = "<group>"; };
+		0F7F840E16D31FEC008FE099 /* CurrentLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentLocationCell.h; path = ZhaoPin_WWZ/Views/JobSearch/CurrentLocationCell.h; sourceTree = "<group>"; };
+		0F7F840F16D31FEC008FE099 /* CurrentLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentLocationCell.m; path = ZhaoPin_WWZ/Views/JobSearch/CurrentLocationCell.m; sourceTree = "<group>"; };
+		0F7F841116D32017008FE099 /* KeyWordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyWordCell.h; path = ZhaoPin_WWZ/Views/JobSearch/KeyWordCell.h; sourceTree = "<group>"; };
+		0F7F841216D32017008FE099 /* KeyWordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyWordCell.m; path = ZhaoPin_WWZ/Views/JobSearch/KeyWordCell.m; sourceTree = "<group>"; };
+		0F7F841416D3204C008FE099 /* PickViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickViewCell.h; path = ZhaoPin_WWZ/Views/JobSearch/PickViewCell.h; sourceTree = "<group>"; };
+		0F7F841516D3204C008FE099 /* PickViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickViewCell.m; path = ZhaoPin_WWZ/Views/JobSearch/PickViewCell.m; sourceTree = "<group>"; };
+		0F7F841716D32078008FE099 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryCell.h; path = ZhaoPin_WWZ/Views/JobSearch/HistoryCell.h; sourceTree = "<group>"; };
+		0F7F841816D32078008FE099 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryCell.m; path = ZhaoPin_WWZ/Views/JobSearch/HistoryCell.m; sourceTree = "<group>"; };
+		0F7F841A16D32090008FE099 /* PushNextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushNextCell.h; path = ZhaoPin_WWZ/Views/JobSearch/PushNextCell.h; sourceTree = "<group>"; };
+		0F7F841B16D32090008FE099 /* PushNextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushNextCell.m; path = ZhaoPin_WWZ/Views/JobSearch/PushNextCell.m; sourceTree = "<group>"; };
+		0F7F841D16D32138008FE099 /* PushToDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushToDetailCell.h; path = ZhaoPin_WWZ/Views/JobSearch/PushToDetailCell.h; sourceTree = "<group>"; };
+		0F7F841E16D32138008FE099 /* PushToDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushToDetailCell.m; path = ZhaoPin_WWZ/Views/JobSearch/PushToDetailCell.m; sourceTree = "<group>"; };
+		0F7F842016D3219C008FE099 /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultViewController.h; path = ZhaoPin_WWZ/Controllers/JobSearch/SearchResultViewController.h; sourceTree = "<group>"; };
+		0F7F842116D3219C008FE099 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultViewController.m; path = ZhaoPin_WWZ/Controllers/JobSearch/SearchResultViewController.m; sourceTree = "<group>"; };
+		0F7F842316D321EB008FE099 /* JobInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobInfoViewController.h; path = ZhaoPin_WWZ/Controllers/JobSearch/JobInfoViewController.h; sourceTree = "<group>"; };
+		0F7F842416D321EB008FE099 /* JobInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobInfoViewController.m; path = ZhaoPin_WWZ/Controllers/JobSearch/JobInfoViewController.m; sourceTree = "<group>"; };
+		0F7F842616D32217008FE099 /* JobInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobInfoCell.h; path = ZhaoPin_WWZ/Views/JobSearch/JobInfoCell.h; sourceTree = "<group>"; };
+		0F7F842716D32218008FE099 /* JobInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobInfoCell.m; path = ZhaoPin_WWZ/Views/JobSearch/JobInfoCell.m; sourceTree = "<group>"; };
+		0F7F842A16D32290008FE099 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = ZhaoPin_WWZ/Controllers/MyZhiLian/LogInViewController.h; sourceTree = "<group>"; };
+		0F7F842B16D32290008FE099 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInViewController.m; path = ZhaoPin_WWZ/Controllers/MyZhiLian/LogInViewController.m; sourceTree = "<group>"; };
+		0F7F842D16D322E9008FE099 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = ZhaoPin_WWZ/Controllers/MyZhiLian/RegisterViewController.h; sourceTree = "<group>"; };
+		0F7F842E16D322E9008FE099 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = ZhaoPin_WWZ/Controllers/MyZhiLian/RegisterViewController.m; sourceTree = "<group>"; };
+		0F7F843116D32371008FE099 /* LogRegCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogRegCell.h; path = ZhaoPin_WWZ/Views/MyZhiLian/LogRegCell.h; sourceTree = "<group>"; };
+		0F7F843216D32371008FE099 /* LogRegCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogRegCell.m; path = ZhaoPin_WWZ/Views/MyZhiLian/LogRegCell.m; sourceTree = "<group>"; };
+		0F7F843416D323CB008FE099 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoViewController.h; path = ZhaoPin_WWZ/Controllers/MyZhiLian/UserInfoViewController.h; sourceTree = "<group>"; };
+		0F7F843516D323CB008FE099 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoViewController.m; path = ZhaoPin_WWZ/Controllers/MyZhiLian/UserInfoViewController.m; sourceTree = "<group>"; };
+		0F7F843716D32587008FE099 /* DetailInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailInfoViewController.h; path = ZhaoPin_WWZ/Controllers/MyZhiLian/DetailInfoViewController.h; sourceTree = "<group>"; };
+		0F7F843816D32587008FE099 /* DetailInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailInfoViewController.m; path = ZhaoPin_WWZ/Controllers/MyZhiLian/DetailInfoViewController.m; sourceTree = "<group>"; };
+		0F7F843A16D325DE008FE099 /* SubscribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubscribeViewController.h; path = ZhaoPin_WWZ/Controllers/MyZhiLian/SubscribeViewController.h; sourceTree = "<group>"; };
+		0F7F843B16D325DE008FE099 /* SubscribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubscribeViewController.m; path = ZhaoPin_WWZ/Controllers/MyZhiLian/SubscribeViewController.m; sourceTree = "<group>"; };
+		0F7F843D16D32625008FE099 /* JobFinderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobFinderCell.h; path = ZhaoPin_WWZ/Views/MyZhiLian/JobFinderCell.h; sourceTree = "<group>"; };
+		0F7F843E16D32625008FE099 /* JobFinderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobFinderCell.m; path = ZhaoPin_WWZ/Views/MyZhiLian/JobFinderCell.m; sourceTree = "<group>"; };
+		0F7F844116D3268E008FE099 /* JobRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobRecommendViewController.h; path = ZhaoPin_WWZ/Controllers/RealTimeRecommend/JobRecommendViewController.h; sourceTree = "<group>"; };
+		0F7F844216D3268E008FE099 /* JobRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobRecommendViewController.m; path = ZhaoPin_WWZ/Controllers/RealTimeRecommend/JobRecommendViewController.m; sourceTree = "<group>"; };
+		0F7F844516D326D1008FE099 /* RecommendJobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecommendJobCell.h; path = ZhaoPin_WWZ/Views/RealTimeRecommend/RecommendJobCell.h; sourceTree = "<group>"; };
+		0F7F844616D326D1008FE099 /* RecommendJobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecommendJobCell.m; path = ZhaoPin_WWZ/Views/RealTimeRecommend/RecommendJobCell.m; sourceTree = "<group>"; };
+		0F7F844916D32702008FE099 /* QueryConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueryConditionViewController.h; path = ZhaoPin_WWZ/Controllers/SalaryQuery/QueryConditionViewController.h; sourceTree = "<group>"; };
+		0F7F844A16D32702008FE099 /* QueryConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QueryConditionViewController.m; path = ZhaoPin_WWZ/Controllers/SalaryQuery/QueryConditionViewController.m; sourceTree = "<group>"; };
+		0F7F844D16D32744008FE099 /* WorkExpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkExpCell.h; path = ZhaoPin_WWZ/Views/SalaryQuery/WorkExpCell.h; sourceTree = "<group>"; };
+		0F7F844E16D32744008FE099 /* WorkExpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkExpCell.m; path = ZhaoPin_WWZ/Views/SalaryQuery/WorkExpCell.m; sourceTree = "<group>"; };
+		0F7F845016D327BD008FE099 /* QueryResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueryResultViewController.h; path = ZhaoPin_WWZ/Controllers/SalaryQuery/QueryResultViewController.h; sourceTree = "<group>"; };
+		0F7F845116D327BD008FE099 /* QueryResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QueryResultViewController.m; path = ZhaoPin_WWZ/Controllers/SalaryQuery/QueryResultViewController.m; sourceTree = "<group>"; };
+		0F7F845316D327EB008FE099 /* QueryConditionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueryConditionCell.h; path = ZhaoPin_WWZ/Views/SalaryQuery/QueryConditionCell.h; sourceTree = "<group>"; };
+		0F7F845416D327EB008FE099 /* QueryConditionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QueryConditionCell.m; path = ZhaoPin_WWZ/Views/SalaryQuery/QueryConditionCell.m; sourceTree = "<group>"; };
+		0F7F845616D32842008FE099 /* DetailConditionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailConditionCell.h; path = ZhaoPin_WWZ/Views/SalaryQuery/DetailConditionCell.h; sourceTree = "<group>"; };
+		0F7F845716D32842008FE099 /* DetailConditionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailConditionCell.m; path = ZhaoPin_WWZ/Views/SalaryQuery/DetailConditionCell.m; sourceTree = "<group>"; };
+		0F7F845916D3286A008FE099 /* ChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChartCell.h; path = ZhaoPin_WWZ/Views/SalaryQuery/ChartCell.h; sourceTree = "<group>"; };
+		0F7F845A16D3286A008FE099 /* ChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChartCell.m; path = ZhaoPin_WWZ/Views/SalaryQuery/ChartCell.m; sourceTree = "<group>"; };
+		0F7F845D16D328CD008FE099 /* GuideListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideListViewController.h; path = ZhaoPin_WWZ/Controllers/JobGuide/GuideListViewController.h; sourceTree = "<group>"; };
+		0F7F845E16D328CD008FE099 /* GuideListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideListViewController.m; path = ZhaoPin_WWZ/Controllers/JobGuide/GuideListViewController.m; sourceTree = "<group>"; };
+		0F7F846016D32983008FE099 /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailListViewController.h; path = ZhaoPin_WWZ/Controllers/JobGuide/DetailListViewController.h; sourceTree = "<group>"; };
+		0F7F846116D32983008FE099 /* DetailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailListViewController.m; path = ZhaoPin_WWZ/Controllers/JobGuide/DetailListViewController.m; sourceTree = "<group>"; };
+		0F7F846316D32995008FE099 /* GuideTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideTextViewController.h; path = ZhaoPin_WWZ/Controllers/JobGuide/GuideTextViewController.h; sourceTree = "<group>"; };
+		0F7F846416D32995008FE099 /* GuideTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideTextViewController.m; path = ZhaoPin_WWZ/Controllers/JobGuide/GuideTextViewController.m; sourceTree = "<group>"; };
 		0FF6845D16D311C000F8DCEF /* ZhaoPin_WWZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhaoPin_WWZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF6846116D311C000F8DCEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0FF6846316D311C000F8DCEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,9 +156,209 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F7F83BE16D31326008FE099 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F7F83C016D31332008FE099 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F844C16D3270D008FE099 /* SalaryQuery */,
+				0F7F844416D32695008FE099 /* RealTimeRecommend */,
+				0F7F843016D32310008FE099 /* MyZhiLian */,
+				0F7F840D16D31F9C008FE099 /* JobSearch */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0F7F83C116D31338008FE099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F845C16D328A0008FE099 /* JobGuide */,
+				0F7F844816D326E7008FE099 /* SalaryQuery */,
+				0F7F844016D3263B008FE099 /* RealTimeRecommend */,
+				0F7F842916D3223D008FE099 /* MyZhiLian */,
+				0F7F83EE16D31A6C008FE099 /* JobSearch */,
+				0F7F83ED16D31A30008FE099 /* TabBar&Navigation */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0F7F83C216D3133E008FE099 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		0F7F83C316D31344008FE099 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		0F7F83C416D3134C008FE099 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		0F7F83ED16D31A30008FE099 /* TabBar&Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F83D016D316C9008FE099 /* ZhaoPinTabBarController.h */,
+				0F7F83D116D316C9008FE099 /* ZhaoPinTabBarController.m */,
+				0F7F83D316D316E9008FE099 /* JobSearchNaviController.h */,
+				0F7F83D416D316E9008FE099 /* JobSearchNaviController.m */,
+				0F7F83D616D31803008FE099 /* MyZhiLianNaviController.h */,
+				0F7F83D716D31803008FE099 /* MyZhiLianNaviController.m */,
+				0F7F83D916D3189B008FE099 /* RealTimeRecommendNaviController.h */,
+				0F7F83DA16D3189B008FE099 /* RealTimeRecommendNaviController.m */,
+				0F7F83DC16D31931008FE099 /* SalaryQueryNaviController.h */,
+				0F7F83DD16D31931008FE099 /* SalaryQueryNaviController.m */,
+				0F7F83DF16D3195D008FE099 /* JobGuideNaviController.h */,
+				0F7F83E016D3195D008FE099 /* JobGuideNaviController.m */,
+			);
+			name = "TabBar&Navigation";
+			sourceTree = "<group>";
+		};
+		0F7F83EE16D31A6C008FE099 /* JobSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F83EF16D31C8B008FE099 /* SearchConditionViewController.h */,
+				0F7F83F016D31C8B008FE099 /* SearchConditionViewController.m */,
+				0F7F840716D31F3A008FE099 /* ConditionNameViewController.h */,
+				0F7F840816D31F3A008FE099 /* ConditionNameViewController.m */,
+				0F7F840A16D31F71008FE099 /* DetailNameViewController.h */,
+				0F7F840B16D31F71008FE099 /* DetailNameViewController.m */,
+				0F7F842016D3219C008FE099 /* SearchResultViewController.h */,
+				0F7F842116D3219C008FE099 /* SearchResultViewController.m */,
+				0F7F842316D321EB008FE099 /* JobInfoViewController.h */,
+				0F7F842416D321EB008FE099 /* JobInfoViewController.m */,
+			);
+			name = JobSearch;
+			sourceTree = "<group>";
+		};
+		0F7F840D16D31F9C008FE099 /* JobSearch */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F840E16D31FEC008FE099 /* CurrentLocationCell.h */,
+				0F7F840F16D31FEC008FE099 /* CurrentLocationCell.m */,
+				0F7F841116D32017008FE099 /* KeyWordCell.h */,
+				0F7F841216D32017008FE099 /* KeyWordCell.m */,
+				0F7F841416D3204C008FE099 /* PickViewCell.h */,
+				0F7F841516D3204C008FE099 /* PickViewCell.m */,
+				0F7F841716D32078008FE099 /* HistoryCell.h */,
+				0F7F841816D32078008FE099 /* HistoryCell.m */,
+				0F7F841A16D32090008FE099 /* PushNextCell.h */,
+				0F7F841B16D32090008FE099 /* PushNextCell.m */,
+				0F7F841D16D32138008FE099 /* PushToDetailCell.h */,
+				0F7F841E16D32138008FE099 /* PushToDetailCell.m */,
+				0F7F842616D32217008FE099 /* JobInfoCell.h */,
+				0F7F842716D32218008FE099 /* JobInfoCell.m */,
+			);
+			name = JobSearch;
+			sourceTree = "<group>";
+		};
+		0F7F842916D3223D008FE099 /* MyZhiLian */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F842A16D32290008FE099 /* LogInViewController.h */,
+				0F7F842B16D32290008FE099 /* LogInViewController.m */,
+				0F7F842D16D322E9008FE099 /* RegisterViewController.h */,
+				0F7F842E16D322E9008FE099 /* RegisterViewController.m */,
+				0F7F843416D323CB008FE099 /* UserInfoViewController.h */,
+				0F7F843516D323CB008FE099 /* UserInfoViewController.m */,
+				0F7F843716D32587008FE099 /* DetailInfoViewController.h */,
+				0F7F843816D32587008FE099 /* DetailInfoViewController.m */,
+				0F7F843A16D325DE008FE099 /* SubscribeViewController.h */,
+				0F7F843B16D325DE008FE099 /* SubscribeViewController.m */,
+			);
+			name = MyZhiLian;
+			sourceTree = "<group>";
+		};
+		0F7F843016D32310008FE099 /* MyZhiLian */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F843116D32371008FE099 /* LogRegCell.h */,
+				0F7F843216D32371008FE099 /* LogRegCell.m */,
+				0F7F843D16D32625008FE099 /* JobFinderCell.h */,
+				0F7F843E16D32625008FE099 /* JobFinderCell.m */,
+			);
+			name = MyZhiLian;
+			sourceTree = "<group>";
+		};
+		0F7F844016D3263B008FE099 /* RealTimeRecommend */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F844116D3268E008FE099 /* JobRecommendViewController.h */,
+				0F7F844216D3268E008FE099 /* JobRecommendViewController.m */,
+			);
+			name = RealTimeRecommend;
+			sourceTree = "<group>";
+		};
+		0F7F844416D32695008FE099 /* RealTimeRecommend */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F844516D326D1008FE099 /* RecommendJobCell.h */,
+				0F7F844616D326D1008FE099 /* RecommendJobCell.m */,
+			);
+			name = RealTimeRecommend;
+			sourceTree = "<group>";
+		};
+		0F7F844816D326E7008FE099 /* SalaryQuery */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F844916D32702008FE099 /* QueryConditionViewController.h */,
+				0F7F844A16D32702008FE099 /* QueryConditionViewController.m */,
+				0F7F845016D327BD008FE099 /* QueryResultViewController.h */,
+				0F7F845116D327BD008FE099 /* QueryResultViewController.m */,
+			);
+			name = SalaryQuery;
+			sourceTree = "<group>";
+		};
+		0F7F844C16D3270D008FE099 /* SalaryQuery */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F844D16D32744008FE099 /* WorkExpCell.h */,
+				0F7F844E16D32744008FE099 /* WorkExpCell.m */,
+				0F7F845316D327EB008FE099 /* QueryConditionCell.h */,
+				0F7F845416D327EB008FE099 /* QueryConditionCell.m */,
+				0F7F845616D32842008FE099 /* DetailConditionCell.h */,
+				0F7F845716D32842008FE099 /* DetailConditionCell.m */,
+				0F7F845916D3286A008FE099 /* ChartCell.h */,
+				0F7F845A16D3286A008FE099 /* ChartCell.m */,
+			);
+			name = SalaryQuery;
+			sourceTree = "<group>";
+		};
+		0F7F845C16D328A0008FE099 /* JobGuide */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F845D16D328CD008FE099 /* GuideListViewController.h */,
+				0F7F845E16D328CD008FE099 /* GuideListViewController.m */,
+				0F7F846016D32983008FE099 /* DetailListViewController.h */,
+				0F7F846116D32983008FE099 /* DetailListViewController.m */,
+				0F7F846316D32995008FE099 /* GuideTextViewController.h */,
+				0F7F846416D32995008FE099 /* GuideTextViewController.m */,
+			);
+			name = JobGuide;
+			sourceTree = "<group>";
+		};
 		0FF6845216D311C000F8DCEF = {
 			isa = PBXGroup;
 			children = (
+				0F7F83C416D3134C008FE099 /* Resource */,
+				0F7F83C316D31344008FE099 /* Custom */,
+				0F7F83C216D3133E008FE099 /* External */,
+				0F7F83C116D31338008FE099 /* Controllers */,
+				0F7F83C016D31332008FE099 /* Views */,
+				0F7F83BE16D31326008FE099 /* Model */,
 				0FF6846716D311C000F8DCEF /* ZhaoPin_WWZ */,
 				0FF6846016D311C000F8DCEF /* Frameworks */,
 				0FF6845E16D311C000F8DCEF /* Products */,
@@ -167,6 +475,42 @@
 			files = (
 				0FF6846E16D311C000F8DCEF /* main.m in Sources */,
 				0FF6847216D311C000F8DCEF /* ZPAppDelegate.m in Sources */,
+				0F7F83D216D316C9008FE099 /* ZhaoPinTabBarController.m in Sources */,
+				0F7F83D516D316E9008FE099 /* JobSearchNaviController.m in Sources */,
+				0F7F83D816D31803008FE099 /* MyZhiLianNaviController.m in Sources */,
+				0F7F83DB16D3189B008FE099 /* RealTimeRecommendNaviController.m in Sources */,
+				0F7F83DE16D31931008FE099 /* SalaryQueryNaviController.m in Sources */,
+				0F7F83E116D3195D008FE099 /* JobGuideNaviController.m in Sources */,
+				0F7F83F116D31C8B008FE099 /* SearchConditionViewController.m in Sources */,
+				0F7F840916D31F3A008FE099 /* ConditionNameViewController.m in Sources */,
+				0F7F840C16D31F71008FE099 /* DetailNameViewController.m in Sources */,
+				0F7F841016D31FEC008FE099 /* CurrentLocationCell.m in Sources */,
+				0F7F841316D32017008FE099 /* KeyWordCell.m in Sources */,
+				0F7F841616D3204C008FE099 /* PickViewCell.m in Sources */,
+				0F7F841916D32078008FE099 /* HistoryCell.m in Sources */,
+				0F7F841C16D32090008FE099 /* PushNextCell.m in Sources */,
+				0F7F841F16D32138008FE099 /* PushToDetailCell.m in Sources */,
+				0F7F842216D3219C008FE099 /* SearchResultViewController.m in Sources */,
+				0F7F842516D321EB008FE099 /* JobInfoViewController.m in Sources */,
+				0F7F842816D32218008FE099 /* JobInfoCell.m in Sources */,
+				0F7F842C16D32290008FE099 /* LogInViewController.m in Sources */,
+				0F7F842F16D322E9008FE099 /* RegisterViewController.m in Sources */,
+				0F7F843316D32371008FE099 /* LogRegCell.m in Sources */,
+				0F7F843616D323CB008FE099 /* UserInfoViewController.m in Sources */,
+				0F7F843916D32587008FE099 /* DetailInfoViewController.m in Sources */,
+				0F7F843C16D325DE008FE099 /* SubscribeViewController.m in Sources */,
+				0F7F843F16D32625008FE099 /* JobFinderCell.m in Sources */,
+				0F7F844316D3268E008FE099 /* JobRecommendViewController.m in Sources */,
+				0F7F844716D326D1008FE099 /* RecommendJobCell.m in Sources */,
+				0F7F844B16D32702008FE099 /* QueryConditionViewController.m in Sources */,
+				0F7F844F16D32744008FE099 /* WorkExpCell.m in Sources */,
+				0F7F845216D327BD008FE099 /* QueryResultViewController.m in Sources */,
+				0F7F845516D327EB008FE099 /* QueryConditionCell.m in Sources */,
+				0F7F845816D32842008FE099 /* DetailConditionCell.m in Sources */,
+				0F7F845B16D3286B008FE099 /* ChartCell.m in Sources */,
+				0F7F845F16D328CD008FE099 /* GuideListViewController.m in Sources */,
+				0F7F846216D32983008FE099 /* DetailListViewController.m in Sources */,
+				0F7F846516D32995008FE099 /* GuideTextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +617,7 @@
 				0FF6847D16D311C000F8DCEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

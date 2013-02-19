@@ -19,50 +19,76 @@
 {
     if (self = [super init])
     {
+        sectionNameArray = [[NSArray alloc]initWithObjects:@"网申",@"职场健康",@"毕业生",@"职场聚焦",@"简历",@"职业规划",@"薪酬",@"面试", nil];
     }
     return self;
+}
+-(void)dealloc
+{
+    [sectionNameArray release];
+    [super dealloc];
 }
 -(void)loadView
 {
     self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor yellowColor];
+    
+    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 460) style:UITableViewStyleGrouped]autorelease];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    //self.tableView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.tableView];
 
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 460) style:UITableViewStyleGrouped]autorelease];
-    [self.view addSubview:self.tableView];
+    
 }
 #pragma mark -
 #pragma mark -tableView Delegate-
--(NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    
+    return 8;
+}
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSLog(@"%@",sectionNameArray);
+    return [sectionNameArray objectAtIndex:section];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
+    return 5;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    static NSString *cellIndentifier = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
+    }
     
+    cell.textLabel.text = @"测试";
+    
+    return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    
+    return 60;
 }
--(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+//{
+//    
+//}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    return 50;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //push
+    NSLog(@"~~~~~~~~~~~~~~~~~~~~");
 }
 #pragma mark -
 #pragma mark -Memory Managament- 

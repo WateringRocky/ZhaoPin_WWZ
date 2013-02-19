@@ -11,6 +11,7 @@
 @interface GuideListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *_tableView;
+    NSArray *sectionNameArray;
 }
 @property (nonatomic,retain) UITableView *tableView;
 

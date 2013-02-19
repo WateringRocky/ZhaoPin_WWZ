@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GuideListViewController : UIViewController
+@interface GuideListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView *_tableView;
+}
+@property (nonatomic,retain) UITableView *tableView;
 
 @end

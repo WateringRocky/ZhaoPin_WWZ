@@ -13,20 +13,25 @@
 @end
 
 @implementation GuideListViewController
+@synthesize tableView = _tableView;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self = [super init])
+    {
     }
     return self;
 }
-
+-(void)loadView
+{
+    self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
+    self.view.backgroundColor = [UIColor yellowColor];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor yellowColor];
+    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 460) style:UITableViewStyleGrouped]autorelease];
+
 }
 
 - (void)didReceiveMemoryWarning

@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface BaseData : NSObject
-
+{
+    int a;
+}
 @end

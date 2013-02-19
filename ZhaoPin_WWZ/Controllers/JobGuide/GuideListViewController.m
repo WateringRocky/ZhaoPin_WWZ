@@ -33,12 +33,11 @@
     self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
     self.view.backgroundColor = [UIColor yellowColor];
     
-    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 460) style:UITableViewStyleGrouped]autorelease];
+    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 480-20-44-49) style:UITableViewStyleGrouped]autorelease];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    //self.tableView.backgroundColor = [UIColor blackColor];
+    self.tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tableView];
-
 }
 - (void)viewDidLoad
 {
@@ -47,6 +46,19 @@
 }
 #pragma mark -
 #pragma mark -tableView Delegate-
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    headerView.backgroundColor = [UIColor redColor];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame = CGRectMake(250, 5, 40, 30);
+    [btn setTitle:@"更多" forState:UIControlStateNormal];
+    btn.tag = 1000+section;
+    [btn addTarget:self action:@selector(moreAction:) forControlEvents:UIControlEventTouchUpInside];
+    [headerView addSubview:btn];
+    
+    return headerView;
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 8;
@@ -75,7 +87,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 60;
+    return 50;
 }
 //-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 //{
@@ -83,12 +95,22 @@
 //}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 40;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //push
     NSLog(@"~~~~~~~~~~~~~~~~~~~~");
+}
+#pragma mark -
+#pragma mark -Custom Methods-
+-(void)moreAction:(UIButton *)sender
+{
+    
 }
 #pragma mark -
 #pragma mark -Memory Managament- 

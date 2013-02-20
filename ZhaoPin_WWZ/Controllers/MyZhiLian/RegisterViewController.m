@@ -15,19 +15,24 @@
 
 @implementation RegisterViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super init];
+    if (self)
+    {
+        
     }
     return self;
 }
-
-- (void)viewDidLoad
+-(void)loadView
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
+    self.view.backgroundColor = [UIColor clearColor];
+    //self.navigationController.navigationBar.hidden = YES;
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.title = @"用户注册";
+    
     UIImageView *registerView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 300, 210)];
     registerView.image = [UIImage imageNamed:@"registerBg"];
     [self.view addSubview:registerView];
@@ -83,8 +88,13 @@
     [loginButton addTarget:self action:@selector(backToLogin) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginButton];
     
-    
 
+}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -101,9 +111,7 @@
 }
 -(void)backToLogin
 {
-    LogInViewController *logInController = [[LogInViewController alloc]init];
-    [self.navigationController pushViewController:logInController animated:YES];
-    [logInController release];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

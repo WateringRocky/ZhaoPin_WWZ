@@ -25,10 +25,15 @@
     return self;
 }
 
-- (void)viewDidLoad
+-(void)loadView
 {
-    [super viewDidLoad];
-    //self.view.backgroundColor = [UIColor grayColor];
+    self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
+    self.view.backgroundColor = [UIColor clearColor];
+    //self.navigationController.navigationBar.hidden = YES;
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.title = @"我的智联";
+    
     //登陆view
 	UIImageView *loginBgView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 300, 100)];
     loginBgView.image = [UIImage imageNamed:@"loginBg"];
@@ -43,7 +48,7 @@
     mailField.clearButtonMode = UITextFieldViewModeWhileEditing;
     [self.view addSubview:mailField];
     [mailField release];
-
+    
     //密码Field
     UITextField *registerField = [[UITextField alloc]initWithFrame:CGRectMake(70, 70, 230, 30)];
     registerField.borderStyle = UITextBorderStyleRoundedRect;
@@ -69,6 +74,11 @@
     [registerButton setTitle:@"注册新用户" forState:UIControlStateNormal];
     [registerButton addTarget:self action:@selector(registerUerInfo) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:registerButton];
+}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    //self.view.backgroundColor = [UIColor grayColor];
     
 }
 

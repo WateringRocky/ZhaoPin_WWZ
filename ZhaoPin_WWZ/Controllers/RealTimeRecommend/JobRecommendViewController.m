@@ -24,7 +24,6 @@
     }
     return self;
 }
-
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:YES];
@@ -32,17 +31,24 @@
     [alertView show];
     [alertView release];
 }
-
-- (void)viewDidLoad
+-(void)loadView
 {
-    [super viewDidLoad];
+    self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
+    self.view.backgroundColor = [UIColor clearColor];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+     self.navigationItem.title = @"实时推荐";
+    
     UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc]initWithTitle:@"申请"
                                                                       style:UIBarButtonItemStyleDone
                                                                      target:self
                                                                      action:@selector(applyForPosition)];
     self.navigationItem.rightBarButtonItem = rightBarButton;
     [rightBarButton release];
-    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
 	
 }
 -(void)applyForPosition

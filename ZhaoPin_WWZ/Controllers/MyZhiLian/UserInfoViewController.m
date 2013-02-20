@@ -36,10 +36,14 @@
     }
     return self;
 }
-- (void)viewDidLoad
+-(void)loadView
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
+    self.view.backgroundColor = [UIColor clearColor];
+    //self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.title = @"我的智联";
+    
     //注销提示按钮
     UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc]initWithTitle:@"注销" style:UIBarButtonItemStyleDone target:self action:@selector(cancelDidSomething)];
     self.navigationItem.rightBarButtonItem = rightBarButton;
@@ -77,14 +81,19 @@
     [searchButton addTarget:self action:@selector(settingUpDefaults) forControlEvents:UIControlEventTouchUpInside];
     [searchButton addTarget:self action:@selector(callOffDefaults) forControlEvents:UIControlEventTouchUpOutside];
     [self.view addSubview:searchButton];
-    
     //TableView
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(10, 170, 300, 160)
                                              style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
-    
+
+}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+        
 }
 
 - (void)didReceiveMemoryWarning

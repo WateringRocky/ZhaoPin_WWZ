@@ -79,8 +79,8 @@
 }
 -(void)loginDidSomething
 {
-    //提示信息的判断
-    UIAlertView *loginAlertView = [[UIAlertView alloc]initWithTitle:@"122" message:@"456" delegate:self cancelButtonTitle:@"1234567" otherButtonTitles:@"98765432", nil];
+    //TODO:提示信息的判断
+    UIAlertView *loginAlertView = [[UIAlertView alloc]initWithTitle:nil message:@"请输入用户名" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [loginAlertView show];
     [loginAlertView release];
     

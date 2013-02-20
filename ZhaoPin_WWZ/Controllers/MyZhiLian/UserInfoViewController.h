@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserInfoViewController : UIViewController
-
+@interface UserInfoViewController : UIViewController<UIAlertViewDelegate,UITableViewDataSource,UITableViewDelegate>
+{
+    UITableView *_tableView;
+}
 @end

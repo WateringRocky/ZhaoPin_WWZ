@@ -7,6 +7,7 @@
 //
 
 #import "JobRecommendViewController.h"
+#import "LogInViewController.h"
 
 @interface JobRecommendViewController ()
 
@@ -41,17 +42,29 @@
                                                                      action:@selector(applyForPosition)];
     self.navigationItem.rightBarButtonItem = rightBarButton;
     [rightBarButton release];
-    //
+    
 	
 }
 -(void)applyForPosition
 {
-    
+//TODO:判断登陆情况1:没有登陆2：已经登陆过了
+    UIAlertView *applyAlertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"您尚未登陆，无法推荐职位" delegate:self cancelButtonTitle:@"放弃" otherButtonTitles:@"登陆", nil];
+    [applyAlertView show];
+    [applyAlertView release];
 }
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark -UIAlertViewDelegate方法-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1)
+    {
+        LogInViewController *loginController = [[LogInViewController alloc]init];
+        [self.navigationController pushViewController:loginController animated:YES];
+        [loginController release];
+    }
+ }
 @end

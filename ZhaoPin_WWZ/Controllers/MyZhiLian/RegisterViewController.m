@@ -94,7 +94,10 @@
 }
 -(void)registerNewUerInfo
 {
-
+    //TODO:判断注册时出现的情况
+    UIAlertView *registAlertView = [[UIAlertView alloc]initWithTitle:nil message:@"请输入用户名" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [registAlertView show];
+    [registAlertView release];
 }
 -(void)backToLogin
 {

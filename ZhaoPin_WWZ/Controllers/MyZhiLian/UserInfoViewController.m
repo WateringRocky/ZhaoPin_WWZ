@@ -152,7 +152,7 @@
 //浏览按钮的方法
 -(void)scanInfo
 {
-
+    //TODO:浏览
 }
 //刷新按钮的方法
 -(void)rereshInfo

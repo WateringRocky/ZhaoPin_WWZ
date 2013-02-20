@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ZhaoPinTabBarController : UITabBarController
-
+{
+    NSArray *firImagesArray;
+    NSArray *secImagesArray;
+    UIButton *_targetBtn;
+}
 @end

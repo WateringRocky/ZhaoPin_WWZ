@@ -14,21 +14,39 @@
 
 @implementation JobRecommendViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super init];
+    if (self)
+    {
+        
     }
     return self;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"您尚未登陆，无法推荐职位" delegate:self cancelButtonTitle:@"放弃" otherButtonTitles:@"登陆", nil];
+    [alertView show];
+    [alertView release];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor blueColor];
+    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc]initWithTitle:@"申请"
+                                                                      style:UIBarButtonItemStyleDone
+                                                                     target:self
+                                                                     action:@selector(applyForPosition)];
+    self.navigationItem.rightBarButtonItem = rightBarButton;
+    [rightBarButton release];
+	
 }
-
+-(void)applyForPosition
+{
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

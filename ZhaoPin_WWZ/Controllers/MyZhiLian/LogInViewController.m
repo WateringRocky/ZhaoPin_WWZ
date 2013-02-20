@@ -33,6 +33,7 @@
 	UIImageView *loginBgView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 300, 100)];
     loginBgView.image = [UIImage imageNamed:@"loginBg"];
     [self.view addSubview:loginBgView];
+    [loginBgView release];
     //[self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"loginBg"]]];
     //邮箱Field
     UITextField *mailField = [[UITextField alloc]initWithFrame:CGRectMake(70, 20, 230, 30)];
@@ -41,6 +42,7 @@
     mailField.clearsOnBeginEditing = YES;
     mailField.clearButtonMode = UITextFieldViewModeWhileEditing;
     [self.view addSubview:mailField];
+    [mailField release];
 
     //密码Field
     UITextField *registerField = [[UITextField alloc]initWithFrame:CGRectMake(70, 70, 230, 30)];
@@ -49,7 +51,7 @@
     registerField.clearsOnBeginEditing = YES;
     registerField.clearButtonMode = UITextFieldViewModeWhileEditing;
     [self.view addSubview:registerField];
-    
+    [registerField release];
     //登陆Button
     UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
     loginButton.frame = CGRectMake(10, 115, 130, 44);
@@ -77,7 +79,11 @@
 }
 -(void)loginDidSomething
 {
-
+    //提示信息的判断
+    UIAlertView *loginAlertView = [[UIAlertView alloc]initWithTitle:@"122" message:@"456" delegate:self cancelButtonTitle:@"1234567" otherButtonTitles:@"98765432", nil];
+    [loginAlertView show];
+    [loginAlertView release];
+    
 }
 -(void)registerUerInfo
 {

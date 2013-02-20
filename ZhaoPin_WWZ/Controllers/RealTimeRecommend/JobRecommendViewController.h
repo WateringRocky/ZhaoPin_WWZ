@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JobRecommendViewController : UIViewController
+@interface JobRecommendViewController : UIViewController<UIAlertViewDelegate>
 
 @end

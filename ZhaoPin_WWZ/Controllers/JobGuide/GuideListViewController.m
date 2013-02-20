@@ -19,7 +19,10 @@
 {
     if (self = [super init])
     {
+        self.navigationItem.title = @"求职指导";
+        self.tabBarItem.title = @"职业查询";
         sectionNameArray = [[NSArray alloc]initWithObjects:@"网申",@"职场健康",@"毕业生",@"职场聚焦",@"简历",@"职业规划",@"薪酬",@"面试", nil];
+        
     }
     return self;
 }
@@ -31,9 +34,13 @@
 -(void)loadView
 {
     self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor clearColor];
     
     self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 480-20-44-49) style:UITableViewStyleGrouped]autorelease];
+    //平铺图片
+    UIImageView *aBackImageView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)]autorelease];
+    aBackImageView.backgroundColor = [UIColor clearColor];
+    self.tableView.backgroundView = aBackImageView;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor clearColor];
@@ -49,25 +56,33 @@
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
-    headerView.backgroundColor = [UIColor redColor];
+    headerView.backgroundColor = [UIColor clearColor];
+    //更多 button
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame = CGRectMake(250, 5, 40, 30);
+    [btn setBackgroundImage:[UIImage imageNamed:@"moreNormal.png"] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:@"moreSelected.png"] forState:UIControlStateSelected];
     [btn setTitle:@"更多" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.frame = CGRectMake(230,13, 60, 30);
     btn.tag = 1000+section;
     [btn addTarget:self action:@selector(moreAction:) forControlEvents:UIControlEventTouchUpInside];
     [headerView addSubview:btn];
+    //头部 title label
+    UILabel *sectionNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, 100, 40)];
+    [sectionNameLabel setTextColor:[UIColor whiteColor]];
+    sectionNameLabel.backgroundColor = [UIColor clearColor];
+    [sectionNameLabel setFont:[UIFont systemFontOfSize:20]];
+    sectionNameLabel.text = [sectionNameArray objectAtIndex:section];
+    [headerView addSubview:sectionNameLabel];
+    [sectionNameLabel release];
     
-    return headerView;
+    return [headerView autorelease];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 8;
 }
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    NSLog(@"%@",sectionNameArray);
-    return [sectionNameArray objectAtIndex:section];
-}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 5;
@@ -80,6 +95,8 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
     }
+    
+    cell.accessoryView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"accessoryArrow.png"]]autorelease];
     
     cell.textLabel.text = @"测试";
     
@@ -108,10 +125,12 @@
 }
 #pragma mark -
 #pragma mark -Custom Methods-
+
 -(void)moreAction:(UIButton *)sender
 {
     
 }
+
 #pragma mark -
 #pragma mark -Memory Managament- 
 - (void)didReceiveMemoryWarning

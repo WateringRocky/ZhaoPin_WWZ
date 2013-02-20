@@ -96,7 +96,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier]autorelease];
     }
     
     cell.accessoryView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"accessoryArrow.png"]]autorelease];

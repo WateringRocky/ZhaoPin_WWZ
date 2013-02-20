@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ZhaoPinTabBarController : UITabBarController
-{
-    UIButton *_targetBtn;
-}
+
 @end

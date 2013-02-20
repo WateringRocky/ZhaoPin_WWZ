@@ -14,7 +14,9 @@
 #import "MyZhiLianNaviController.h"
 
 @interface ZhaoPinTabBarController ()
-
+{
+    UIButton *_targetBtn;
+}
 @end
 
 @implementation ZhaoPinTabBarController

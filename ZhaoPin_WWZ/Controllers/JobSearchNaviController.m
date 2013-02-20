@@ -22,14 +22,25 @@
         SearchConditionViewController *aSearchConditionViewController = [[SearchConditionViewController alloc]init];
         [self initWithRootViewController:aSearchConditionViewController];
         [aSearchConditionViewController release];
+        
     }
     return self;
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
 
+}
+#pragma mark -
+#pragma mark -Custom Methods-
+
+
+#pragma mark -
+#pragma mark -Memory Managament-
+-(void)dealloc
+{
+    [super dealloc];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

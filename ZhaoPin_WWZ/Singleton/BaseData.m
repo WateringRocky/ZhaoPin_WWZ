@@ -34,17 +34,17 @@ static BaseData *dataInstance = nil;
 -(BaseData *)initAnInstance
 {
     if(self = [super init]){
-        self.region_city = [[NSMutableArray alloc] init];
-        self.compSize = [[NSMutableArray alloc] init];
-        self.compType = [[NSMutableArray alloc] init];
-        self.industry = [[NSMutableArray alloc] init];
-        self.job_smallJob_type = [[NSMutableArray alloc] init];
-        self.mapRange = [[NSMutableArray alloc] init];
-        self.publishDate = [[NSMutableArray alloc] init];
-        self.education = [[NSMutableArray alloc] init];
-        self.salary = [[NSMutableArray alloc] init];
-        self.employment = [[NSMutableArray alloc] init];
-        self.workEXP = [[NSMutableArray alloc] init];
+        _region_city = [[NSMutableArray alloc] init];
+        _compSize = [[NSMutableArray alloc] init];
+        _compType = [[NSMutableArray alloc] init];
+        _industry = [[NSMutableArray alloc] init];
+        _job_smallJob_type = [[NSMutableArray alloc] init];
+        _mapRange = [[NSMutableArray alloc] init];
+        _publishDate = [[NSMutableArray alloc] init];
+        _education = [[NSMutableArray alloc] init];
+        _salary = [[NSMutableArray alloc] init];
+        _employment = [[NSMutableArray alloc] init];
+        _workEXP = [[NSMutableArray alloc] init];
     }
     return self;
 }

@@ -9,8 +9,12 @@
 #import "SearchConditionViewController.h"
 
 @interface SearchConditionViewController ()
-
+{
+    BOOL openChoice;
+    NSArray *_testArray;
+}
 @end
+
 
 @implementation SearchConditionViewController
 
@@ -18,9 +22,9 @@
 {
     if (self = [super init])
     {
-        
-        self.navigationItem.title = @"快速搜索";
         sectionNameArray = [[NSArray alloc] initWithObjects:@"选择职位搜索条件",@"我的历史搜索", nil];
+        openChoice = NO;
+        
     }
     return self;
 }
@@ -29,12 +33,22 @@
 {
     self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
     self.view.backgroundColor = [UIColor clearColor];
-    //?
-    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"高级搜索" style:UIBarButtonItemStyleBordered target:self action:@selector(changeViewAction:)];
-    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
-    [rightBarButtonItem release];
+    //定义navigationbar
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.title = @"快速搜索";
     
-    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 480-20-44-49) style:UITableViewStyleGrouped]autorelease];
+    navigationBarButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    navigationBarButton.exclusiveTouch = YES;
+    navigationBarButton.frame = CGRectMake(240, 6, 70, 32);
+    [navigationBarButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
+    [navigationBarButton setTitle:@"高级搜索" forState:0];
+    [navigationBarButton setTitleColor:[UIColor whiteColor] forState:0];
+    [navigationBarButton setBackgroundImage:[UIImage imageNamed:@"setting-button-click.png" ] forState:0];
+    [navigationBarButton addTarget:self action:@selector(changeViewAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarbutton = [[[UIBarButtonItem alloc] initWithCustomView:navigationBarButton]autorelease];
+    self.navigationItem.rightBarButtonItem = rightBarbutton;
+    
+    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0,0, 320, 480-20-44-49) style:UITableViewStyleGrouped]autorelease];
     UIImageView *aBackImageView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)]autorelease];
     aBackImageView.backgroundColor = [UIColor clearColor];
     self.tableView.backgroundView = aBackImageView;
@@ -42,6 +56,36 @@
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tableView];
+    
+    //自定义navigation
+    /*
+    UIImageView *naviImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0 , 320, 44)];
+    [naviImageView.layer setShadowOffset:CGSizeMake(1, 1)];
+    [naviImageView.layer setShadowOpacity:0.5];
+    [naviImageView.layer setShadowColor:[UIColor blackColor].CGColor];
+    [naviImageView.layer setShadowRadius:2];
+
+    naviImageView.image = [UIImage imageNamed:@"navigationbar_bg.png"];
+    naviImageView.userInteractionEnabled = YES;
+    [self.view addSubview:naviImageView];
+    UILabel *titileLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 44)];
+    titileLabel.center = CGPointMake(naviImageView.center.x, naviImageView.center.y);
+    titileLabel.textColor = [UIColor whiteColor];
+    [titileLabel setFont:[UIFont systemFontOfSize:20]];
+    titileLabel.backgroundColor = [UIColor clearColor];
+    titileLabel.text = @"快速搜索";
+    [naviImageView addSubview:titileLabel];
+    [titileLabel release];
+    
+    UIButton *navigationBarButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    navigationBarButton.frame = CGRectMake(240, 6, 70, 32);
+    [navigationBarButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
+    [navigationBarButton setTitle:@"高级搜索" forState:0];
+    [navigationBarButton setTitleColor:[UIColor whiteColor] forState:0];
+    [navigationBarButton setBackgroundImage:[UIImage imageNamed:@"setting-button-click.png" ] forState:0];
+    [navigationBarButton addTarget:self action:@selector(changeViewAction:) forControlEvents:UIControlEventTouchUpInside];
+    [naviImageView addSubview:navigationBarButton];
+    */
     
 }
 - (void)viewDidLoad
@@ -90,7 +134,8 @@
     if (section == 0)
     {
         UIButton *searchBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        searchBtn.frame = CGRectMake(80, 15, 160, 35);
+        searchBtn.frame = CGRectMake(80, 15, 160, 40);
+        [searchBtn.titleLabel setFont:[UIFont systemFontOfSize:18]];
         [searchBtn setBackgroundImage:[UIImage imageNamed:@"button_bg_normal.png"] forState:UIControlStateNormal];
         [searchBtn setBackgroundImage:[UIImage imageNamed:@"button_bg_press.png"] forState:UIControlStateSelected];
         [searchBtn setTintColor:[UIColor whiteColor]];
@@ -114,14 +159,29 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0)
+    if (openChoice == YES)
     {
-        return 5;
+        if (section == 0)
+        {
+            return 12;
+        }
+        else
+        {
+            return 3;
+        }
     }
     else
     {
-        return 3;//数据源
+        if (section == 0)
+        {
+            return 6;
+        }
+        else
+        {
+            return 3;//数据源
+        }
     }
+    
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -153,7 +213,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 40;
+    return 42;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -161,11 +221,31 @@
     //push
     NSLog(@"~~~~~~~~~~~~~~~~~~~~");
 }
+
 #pragma mark -
 #pragma mark -Custom Methods-
-
 -(void)changeViewAction:(UIBarButtonItem *)sender
 {
+    if ([self.navigationItem.title isEqualToString:@"快速搜索"])
+    {
+        [navigationBarButton setTitle:@"快速搜索" forState:0];
+        self.navigationItem.title = @"高级搜索";
+    }
+    else
+    {
+        [navigationBarButton setTitle:@"高级搜索" forState:0];
+        self.navigationItem.title = @"快速搜索";
+    }
+    
+    if (openChoice == NO)
+    {
+        openChoice = YES;
+    }
+    else
+    {
+        openChoice = NO;
+    }
+    [self.tableView reloadData];
     
 }
 -(void)searchAction:(UIButton *)sender

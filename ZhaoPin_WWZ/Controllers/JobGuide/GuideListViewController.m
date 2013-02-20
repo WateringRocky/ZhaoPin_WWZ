@@ -19,8 +19,6 @@
 {
     if (self = [super init])
     {
-        self.navigationItem.title = @"求职指导";
-        self.tabBarItem.title = @"职业查询";
         sectionNameArray = [[NSArray alloc]initWithObjects:@"网申",@"职场健康",@"毕业生",@"职场聚焦",@"简历",@"职业规划",@"薪酬",@"面试", nil];
         
     }
@@ -35,8 +33,12 @@
 {
     self.view = [[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds]autorelease];
     self.view.backgroundColor = [UIColor clearColor];
+    //self.navigationController.navigationBar.hidden = YES;
     
-    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 480-20-44-49) style:UITableViewStyleGrouped]autorelease];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.title = @"求职指导";
+    
+    self.tableView = [[[UITableView alloc] initWithFrame:CGRectMake(0,0, 320, 480-20-44-49) style:UITableViewStyleGrouped]autorelease];
     //平铺图片
     UIImageView *aBackImageView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)]autorelease];
     aBackImageView.backgroundColor = [UIColor clearColor];
@@ -45,6 +47,7 @@
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tableView];
+    
 }
 - (void)viewDidLoad
 {
@@ -125,7 +128,6 @@
 }
 #pragma mark -
 #pragma mark -Custom Methods-
-
 -(void)moreAction:(UIButton *)sender
 {
     

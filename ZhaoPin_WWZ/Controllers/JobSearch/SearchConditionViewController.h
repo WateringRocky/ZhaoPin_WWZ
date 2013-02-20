@@ -12,6 +12,8 @@
 {
     UITableView *_tableView;
     NSArray * sectionNameArray;
+    
+    UIButton *navigationBarButton;
 }
 @property (nonatomic,retain) UITableView *tableView;
 

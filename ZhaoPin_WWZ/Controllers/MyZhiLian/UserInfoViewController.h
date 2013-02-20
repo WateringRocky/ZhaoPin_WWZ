@@ -11,5 +11,9 @@
 @interface UserInfoViewController : UIViewController<UIAlertViewDelegate,UITableViewDataSource,UITableViewDelegate>
 {
     UITableView *_tableView;
+    NSMutableArray *_imageArray;
+    NSMutableArray *_textArray;
+    
 }
+@property(nonatomic,readonly)UILabel *showLabel;
 @end

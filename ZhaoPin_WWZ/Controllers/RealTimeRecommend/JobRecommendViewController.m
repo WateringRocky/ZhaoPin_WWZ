@@ -41,6 +41,7 @@
                                                                      action:@selector(applyForPosition)];
     self.navigationItem.rightBarButtonItem = rightBarButton;
     [rightBarButton release];
+    //
 	
 }
 -(void)applyForPosition

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F029C5B16D4728000ED4B9C /* URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C5816D4728000ED4B9C /* URLEncode.m */; };
+		0F029C5C16D4728000ED4B9C /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C5A16D4728000ED4B9C /* XMLReader.m */; };
+		0F029C7716D4729000ED4B9C /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C5E16D4729000ED4B9C /* City.m */; };
+		0F029C7816D4729000ED4B9C /* CompSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6016D4729000ED4B9C /* CompSize.m */; };
+		0F029C7916D4729000ED4B9C /* CompType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6216D4729000ED4B9C /* CompType.m */; };
+		0F029C7A16D4729000ED4B9C /* Education.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6416D4729000ED4B9C /* Education.m */; };
+		0F029C7B16D4729000ED4B9C /* Employment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6616D4729000ED4B9C /* Employment.m */; };
+		0F029C7C16D4729000ED4B9C /* Industry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6816D4729000ED4B9C /* Industry.m */; };
+		0F029C7D16D4729000ED4B9C /* JobType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6A16D4729000ED4B9C /* JobType.m */; };
+		0F029C7E16D4729000ED4B9C /* MapRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6C16D4729000ED4B9C /* MapRange.m */; };
+		0F029C7F16D4729000ED4B9C /* PublishDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C6E16D4729000ED4B9C /* PublishDate.m */; };
+		0F029C8016D4729000ED4B9C /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C7016D4729000ED4B9C /* Region.m */; };
+		0F029C8116D4729000ED4B9C /* Salary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C7216D4729000ED4B9C /* Salary.m */; };
+		0F029C8216D4729000ED4B9C /* SmallJobType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C7416D4729000ED4B9C /* SmallJobType.m */; };
+		0F029C8316D4729000ED4B9C /* WorkEXP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F029C7616D4729000ED4B9C /* WorkEXP.m */; };
 		0F7F83D216D316C9008FE099 /* ZhaoPinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83D116D316C9008FE099 /* ZhaoPinTabBarController.m */; };
 		0F7F83D516D316E9008FE099 /* JobSearchNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83D416D316E9008FE099 /* JobSearchNaviController.m */; };
 		0F7F83D816D31803008FE099 /* MyZhiLianNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7F83D716D31803008FE099 /* MyZhiLianNaviController.m */; };
@@ -278,6 +293,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F029C5716D4728000ED4B9C /* URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLEncode.h; path = ZhaoPin_WWZ/Model/DataHandle/URLEncode.h; sourceTree = "<group>"; };
+		0F029C5816D4728000ED4B9C /* URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLEncode.m; path = ZhaoPin_WWZ/Model/DataHandle/URLEncode.m; sourceTree = "<group>"; };
+		0F029C5916D4728000ED4B9C /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLReader.h; path = ZhaoPin_WWZ/Model/DataHandle/XMLReader.h; sourceTree = "<group>"; };
+		0F029C5A16D4728000ED4B9C /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLReader.m; path = ZhaoPin_WWZ/Model/DataHandle/XMLReader.m; sourceTree = "<group>"; };
+		0F029C5D16D4729000ED4B9C /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = ZhaoPin_WWZ/Model/BaseData/City.h; sourceTree = "<group>"; };
+		0F029C5E16D4729000ED4B9C /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = ZhaoPin_WWZ/Model/BaseData/City.m; sourceTree = "<group>"; };
+		0F029C5F16D4729000ED4B9C /* CompSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompSize.h; path = ZhaoPin_WWZ/Model/BaseData/CompSize.h; sourceTree = "<group>"; };
+		0F029C6016D4729000ED4B9C /* CompSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompSize.m; path = ZhaoPin_WWZ/Model/BaseData/CompSize.m; sourceTree = "<group>"; };
+		0F029C6116D4729000ED4B9C /* CompType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompType.h; path = ZhaoPin_WWZ/Model/BaseData/CompType.h; sourceTree = "<group>"; };
+		0F029C6216D4729000ED4B9C /* CompType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompType.m; path = ZhaoPin_WWZ/Model/BaseData/CompType.m; sourceTree = "<group>"; };
+		0F029C6316D4729000ED4B9C /* Education.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Education.h; path = ZhaoPin_WWZ/Model/BaseData/Education.h; sourceTree = "<group>"; };
+		0F029C6416D4729000ED4B9C /* Education.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Education.m; path = ZhaoPin_WWZ/Model/BaseData/Education.m; sourceTree = "<group>"; };
+		0F029C6516D4729000ED4B9C /* Employment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employment.h; path = ZhaoPin_WWZ/Model/BaseData/Employment.h; sourceTree = "<group>"; };
+		0F029C6616D4729000ED4B9C /* Employment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employment.m; path = ZhaoPin_WWZ/Model/BaseData/Employment.m; sourceTree = "<group>"; };
+		0F029C6716D4729000ED4B9C /* Industry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Industry.h; path = ZhaoPin_WWZ/Model/BaseData/Industry.h; sourceTree = "<group>"; };
+		0F029C6816D4729000ED4B9C /* Industry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Industry.m; path = ZhaoPin_WWZ/Model/BaseData/Industry.m; sourceTree = "<group>"; };
+		0F029C6916D4729000ED4B9C /* JobType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobType.h; path = ZhaoPin_WWZ/Model/BaseData/JobType.h; sourceTree = "<group>"; };
+		0F029C6A16D4729000ED4B9C /* JobType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JobType.m; path = ZhaoPin_WWZ/Model/BaseData/JobType.m; sourceTree = "<group>"; };
+		0F029C6B16D4729000ED4B9C /* MapRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapRange.h; path = ZhaoPin_WWZ/Model/BaseData/MapRange.h; sourceTree = "<group>"; };
+		0F029C6C16D4729000ED4B9C /* MapRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapRange.m; path = ZhaoPin_WWZ/Model/BaseData/MapRange.m; sourceTree = "<group>"; };
+		0F029C6D16D4729000ED4B9C /* PublishDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublishDate.h; path = ZhaoPin_WWZ/Model/BaseData/PublishDate.h; sourceTree = "<group>"; };
+		0F029C6E16D4729000ED4B9C /* PublishDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PublishDate.m; path = ZhaoPin_WWZ/Model/BaseData/PublishDate.m; sourceTree = "<group>"; };
+		0F029C6F16D4729000ED4B9C /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Region.h; path = ZhaoPin_WWZ/Model/BaseData/Region.h; sourceTree = "<group>"; };
+		0F029C7016D4729000ED4B9C /* Region.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Region.m; path = ZhaoPin_WWZ/Model/BaseData/Region.m; sourceTree = "<group>"; };
+		0F029C7116D4729000ED4B9C /* Salary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Salary.h; path = ZhaoPin_WWZ/Model/BaseData/Salary.h; sourceTree = "<group>"; };
+		0F029C7216D4729000ED4B9C /* Salary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Salary.m; path = ZhaoPin_WWZ/Model/BaseData/Salary.m; sourceTree = "<group>"; };
+		0F029C7316D4729000ED4B9C /* SmallJobType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmallJobType.h; path = ZhaoPin_WWZ/Model/BaseData/SmallJobType.h; sourceTree = "<group>"; };
+		0F029C7416D4729000ED4B9C /* SmallJobType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmallJobType.m; path = ZhaoPin_WWZ/Model/BaseData/SmallJobType.m; sourceTree = "<group>"; };
+		0F029C7516D4729000ED4B9C /* WorkEXP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkEXP.h; path = ZhaoPin_WWZ/Model/BaseData/WorkEXP.h; sourceTree = "<group>"; };
+		0F029C7616D4729000ED4B9C /* WorkEXP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkEXP.m; path = ZhaoPin_WWZ/Model/BaseData/WorkEXP.m; sourceTree = "<group>"; };
 		0F7F83D016D316C9008FE099 /* ZhaoPinTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZhaoPinTabBarController.h; path = ZhaoPin_WWZ/Controllers/ZhaoPinTabBarController.h; sourceTree = "<group>"; };
 		0F7F83D116D316C9008FE099 /* ZhaoPinTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZhaoPinTabBarController.m; path = ZhaoPin_WWZ/Controllers/ZhaoPinTabBarController.m; sourceTree = "<group>"; };
 		0F7F83D316D316E9008FE099 /* JobSearchNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JobSearchNaviController.h; path = ZhaoPin_WWZ/Controllers/JobSearchNaviController.h; sourceTree = "<group>"; };
@@ -603,9 +648,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F029C5516D4725B00ED4B9C /* DataHandle */ = {
+			isa = PBXGroup;
+			children = (
+				0F029C5716D4728000ED4B9C /* URLEncode.h */,
+				0F029C5816D4728000ED4B9C /* URLEncode.m */,
+				0F029C5916D4728000ED4B9C /* XMLReader.h */,
+				0F029C5A16D4728000ED4B9C /* XMLReader.m */,
+			);
+			name = DataHandle;
+			sourceTree = "<group>";
+		};
 		0F7F83BE16D31326008FE099 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0F029C5516D4725B00ED4B9C /* DataHandle */,
 				0FBBE53C16D36D0500A8B339 /* BaseData */,
 			);
 			name = Model;
@@ -818,6 +875,32 @@
 		0FBBE53C16D36D0500A8B339 /* BaseData */ = {
 			isa = PBXGroup;
 			children = (
+				0F029C5D16D4729000ED4B9C /* City.h */,
+				0F029C5E16D4729000ED4B9C /* City.m */,
+				0F029C5F16D4729000ED4B9C /* CompSize.h */,
+				0F029C6016D4729000ED4B9C /* CompSize.m */,
+				0F029C6116D4729000ED4B9C /* CompType.h */,
+				0F029C6216D4729000ED4B9C /* CompType.m */,
+				0F029C6316D4729000ED4B9C /* Education.h */,
+				0F029C6416D4729000ED4B9C /* Education.m */,
+				0F029C6516D4729000ED4B9C /* Employment.h */,
+				0F029C6616D4729000ED4B9C /* Employment.m */,
+				0F029C6716D4729000ED4B9C /* Industry.h */,
+				0F029C6816D4729000ED4B9C /* Industry.m */,
+				0F029C6916D4729000ED4B9C /* JobType.h */,
+				0F029C6A16D4729000ED4B9C /* JobType.m */,
+				0F029C6B16D4729000ED4B9C /* MapRange.h */,
+				0F029C6C16D4729000ED4B9C /* MapRange.m */,
+				0F029C6D16D4729000ED4B9C /* PublishDate.h */,
+				0F029C6E16D4729000ED4B9C /* PublishDate.m */,
+				0F029C6F16D4729000ED4B9C /* Region.h */,
+				0F029C7016D4729000ED4B9C /* Region.m */,
+				0F029C7116D4729000ED4B9C /* Salary.h */,
+				0F029C7216D4729000ED4B9C /* Salary.m */,
+				0F029C7316D4729000ED4B9C /* SmallJobType.h */,
+				0F029C7416D4729000ED4B9C /* SmallJobType.m */,
+				0F029C7516D4729000ED4B9C /* WorkEXP.h */,
+				0F029C7616D4729000ED4B9C /* WorkEXP.m */,
 			);
 			name = BaseData;
 			sourceTree = "<group>";
@@ -1484,6 +1567,21 @@
 				0F7F846216D32983008FE099 /* DetailListViewController.m in Sources */,
 				0F7F846516D32995008FE099 /* GuideTextViewController.m in Sources */,
 				0FBBE53716D3680000A8B339 /* BaseData.m in Sources */,
+				0F029C5B16D4728000ED4B9C /* URLEncode.m in Sources */,
+				0F029C5C16D4728000ED4B9C /* XMLReader.m in Sources */,
+				0F029C7716D4729000ED4B9C /* City.m in Sources */,
+				0F029C7816D4729000ED4B9C /* CompSize.m in Sources */,
+				0F029C7916D4729000ED4B9C /* CompType.m in Sources */,
+				0F029C7A16D4729000ED4B9C /* Education.m in Sources */,
+				0F029C7B16D4729000ED4B9C /* Employment.m in Sources */,
+				0F029C7C16D4729000ED4B9C /* Industry.m in Sources */,
+				0F029C7D16D4729000ED4B9C /* JobType.m in Sources */,
+				0F029C7E16D4729000ED4B9C /* MapRange.m in Sources */,
+				0F029C7F16D4729000ED4B9C /* PublishDate.m in Sources */,
+				0F029C8016D4729000ED4B9C /* Region.m in Sources */,
+				0F029C8116D4729000ED4B9C /* Salary.m in Sources */,
+				0F029C8216D4729000ED4B9C /* SmallJobType.m in Sources */,
+				0F029C8316D4729000ED4B9C /* WorkEXP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

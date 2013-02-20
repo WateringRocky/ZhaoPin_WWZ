@@ -157,7 +157,7 @@
 //刷新按钮的方法
 -(void)rereshInfo
 {
-
+    //TODO:刷新
 }
 //设置默认简历的方法
 -(void)settingUpDefaults
